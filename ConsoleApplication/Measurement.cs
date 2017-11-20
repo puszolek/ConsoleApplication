@@ -41,9 +41,9 @@ namespace ConsoleApplication
         public virtual void Print()
         {
             Console.WriteLine("Station name: {3}, temperature: {0}, pressure: {1}, humidity: {2}", 
-                conditions[(int)MeasurementConditions.Temperature], 
-                conditions[(int)MeasurementConditions.Pressure], 
-                conditions[(int)MeasurementConditions.Humidity],
+                Math.Round(conditions[(int)MeasurementConditions.Temperature]), 
+                Math.Round(conditions[(int)MeasurementConditions.Pressure]), 
+                Math.Round(conditions[(int)MeasurementConditions.Humidity]),
                 stationName);
         }
 
